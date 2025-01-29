@@ -2,13 +2,17 @@ using System;
 using System.Reflection;
 using UnityEngine;
 
-public abstract class Manager<T> : MonoBehaviour where T : Manager<T>
+namespace Managers
 {
-    private static T instance;
-    public static T Instance { get { return instance; } }
-
-    protected virtual void Awake()
+    public abstract class Manager<T> : MonoBehaviour where T : Manager<T>
     {
-        instance = (T)this;
+        private static T instance;
+        public static T Instance { get { return instance; } }
+
+        protected virtual void Awake()
+        {
+            instance = (T)this;
+        }
     }
 }
+
