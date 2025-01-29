@@ -1,7 +1,7 @@
 {
   "name": "com.sisimonis.managers",
   "version": "1.0.0",
-  "displayName": "Managerss",
+  "displayName": "Managers",
   "description": "Simple Package that create a base for managers. (Basic Singletons)",
   "unity": "2022.1",
   "author": {
